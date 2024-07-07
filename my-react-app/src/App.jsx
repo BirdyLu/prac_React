@@ -12,7 +12,7 @@ function App() {
       <Food/>
       <Button/><button>default button</button>
       <br/>
-      <Card/><Card/><Card/><Card/><Card/>
+      <Card name="guess"/>
       <Footer/>
     </>
   );
