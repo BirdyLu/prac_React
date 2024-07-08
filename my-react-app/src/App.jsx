@@ -3,16 +3,19 @@ import Footer from './Footer.jsx'
 import Food from './Food.jsx'
 import Card from './Card.jsx'
 import Button from './Button/Button.jsx'
+import UserGreeting from './UserGreeting.jsx'
+import List from './List.jsx'
 
 function App() {
 
   return (
     <>
       <Header/>
-      <Food/>
+      <UserGreeting isLoggedIn={true} userName="Birdy"></UserGreeting>
+      <List/>
       <Button/><button>default button</button>
       <br/>
-      <Card name="guess"/>
+      <Card name="魔芋爽" age={30} isStudent={false} />
       <Footer/>
     </>
   );
