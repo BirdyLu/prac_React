@@ -6,10 +6,8 @@ function Card(props){
             <div className="card-body">
                 <img className="card-img-top" alt="stop looking here" src="https://www.w3schools.com/images/lynx_landing.webp"></img>
                 <Student className="card-title" name={props.name} age={props.age} isStudent={props.isStudent} component="header" />
-                <p className="card-text">
-                    What? Why u asking me? Dont tell me what to do
-                </p>
-                <Student className="card-title" name={props.name} age={props.age} isStudent={props.isStudent} component="paragraph" />
+                {props.TrashTalk && <p className="card-text">What? Why u asking me? Dont tell me what to do</p>}
+                {props.isStudent != null ? <Student className="card-title" name={props.name} age={props.age} isStudent={props.isStudent} component="paragraph"/> : null}
                 <a href="#" className="btn btn-primary stretched-link">See Profile</a>
             </div>
         </div>

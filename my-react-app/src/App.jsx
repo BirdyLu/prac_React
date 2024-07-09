@@ -5,6 +5,7 @@ import Card from './Card.jsx'
 import Button from './Button/Button.jsx'
 import UserGreeting from './UserGreeting.jsx'
 import List from './List.jsx'
+import Counter from './Counter.jsx'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Button/><button>default button</button>
       <br/>
       <Card name="魔芋爽" age={30} isStudent={false} />
+      <Card name="Counter" TrashTalk={false}/>
       <Footer/>
     </>
   );
