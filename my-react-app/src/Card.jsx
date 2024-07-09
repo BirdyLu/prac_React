@@ -1,4 +1,6 @@
 import Student from './Student.jsx'
+import Counter from './Counter.jsx';
+import Typing from './Typing.jsx';
 
 function Card(props){
     return (
@@ -8,7 +10,8 @@ function Card(props){
                 <Student className="card-title" name={props.name} age={props.age} isStudent={props.isStudent} component="header" />
                 {props.TrashTalk && <p className="card-text">What? Why u asking me? Dont tell me what to do</p>}
                 {props.isStudent != null ? <Student className="card-title" name={props.name} age={props.age} isStudent={props.isStudent} component="paragraph"/> : null}
-                <a href="#" className="btn btn-primary stretched-link">See Profile</a>
+                {props.name=="Counter" && <Counter/>}
+                {props.name=="Typing..." && <Typing/>}
             </div>
         </div>
     );

@@ -1,17 +1,27 @@
 import {useState} from 'react';
 
 function Counter(){
-    let name = "Jerry";
-    const [name, setName] = useState(); //useState returns a variable and a setter function.
 
-    const updateName = () => {
-        setName("SpongeBob");
+    const [count, setCounter] = useState(0); //to doefault by 0 upon refresh
+
+    function minusCounter() {
+        setCounter(count - 1);
+    };
+
+    function addCounter() {
+        setCounter(count + 1);
+    };
+
+    function resetCounter() {
+        setCounter(0);
     }
 
     return (
         <div>
-            <p>Name: {name}</p>
-            <button onClick={updateName}>Set name</button>
+            <p>Count: {count}</p>
+            <button onClick={minusCounter}>Count down!</button>
+            <button onClick={resetCounter}>RESET TO 0</button>
+            <button onClick={addCounter}>Count up!</button>
         </div>
     );
 }

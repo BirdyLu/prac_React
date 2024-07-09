@@ -18,6 +18,7 @@ function App() {
       <br/>
       <Card name="魔芋爽" age={30} isStudent={false} />
       <Card name="Counter" TrashTalk={false}/>
+      <Card name="Typing..." TrashTalk={false}/>
       <Footer/>
     </>
   );
