@@ -5,7 +5,6 @@ import Card from './Card.jsx'
 import Button from './Button/Button.jsx'
 import UserGreeting from './UserGreeting.jsx'
 import List from './List.jsx'
-import Counter from './Counter.jsx'
 
 function App() {
 
@@ -19,6 +18,9 @@ function App() {
       <Card name="魔芋爽" age={30} isStudent={false} />
       <Card name="Counter" TrashTalk={false}/>
       <Card name="Typing..." TrashTalk={false}/>
+      <Card name="ColourPicker" TrashTalk={false}/>
+      <Card name="ToDoList" TrashTalk={true}/>
+      <Card name="DigitalClock" TrashTalk={false}/>
       <Footer/>
     </>
   );

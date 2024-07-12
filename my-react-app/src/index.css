@@ -77,3 +77,7 @@ button:focus-visible {
 .card .card-img-top {
   margin-bottom: 15px;
 }
+
+.clock {
+  font-size: 40px;
+}
